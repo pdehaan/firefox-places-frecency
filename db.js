@@ -1,11 +1,7 @@
-const sqlite3 = require("sqlite3");
-const sqlite = require("sqlite");
+const sqlite = require("better-sqlite3");
 
 module.exports = {
   async open(filename) {
-    return sqlite.open({
-      filename,
-      driver: sqlite3.Database,
-    });
+    return sqlite(filename, {});
   },
 };

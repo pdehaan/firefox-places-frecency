@@ -6,7 +6,7 @@ module.exports = {
       "SELECT prefix, host, frecency FROM moz_origins ORDER BY frecency DESC";
     const $places = await db.open(filename);
 
-    let rows = await $places.all(QUERY);
+    let rows = await $places.prepare(QUERY).all();
     rows = rows.map((origin) =>
       Object.assign(origin, {
         uri: new URL(`${origin.prefix}${origin.host}`).href,
