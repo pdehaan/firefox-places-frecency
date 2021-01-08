@@ -1,0 +1,29 @@
+{
+  "name": "firefox-places-frecency",
+  "version": "1.0.0",
+  "author": "Peter deHaan <peter@deseloper.com> (https://about.me/peterdehaan)",
+  "bin": {
+    "firefox-places-frecency": "index.js"
+  },
+  "bugs": {
+    "url": "https://github.com/pdehaan/firefox-places-frecency/issues"
+  },
+  "dependencies": {
+    "meow": "^9.0.0",
+    "sqlite": "^4.0.19",
+    "sqlite3": "^5.0.1"
+  },
+  "devDependencies": {},
+  "homepage": "https://github.com/pdehaan/firefox-places-frecency#readme",
+  "keywords": [],
+  "license": "MPL-2.0",
+  "main": "lib.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pdehaan/firefox-places-frecency.git"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "description": ""
+}
