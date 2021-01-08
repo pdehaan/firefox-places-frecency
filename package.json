@@ -1,9 +1,10 @@
 {
   "name": "firefox-places-frecency",
+  "description": "Scan your Firefox profile's places.sqlite file and sort your moz_origins by frecency.",
   "version": "1.0.0",
   "author": "Peter deHaan <peter@deseloper.com> (https://about.me/peterdehaan)",
   "bin": {
-    "firefox-places-frecency": "index.js"
+    "firefox-places-frecency": "cli.js"
   },
   "bugs": {
     "url": "https://github.com/pdehaan/firefox-places-frecency/issues"
@@ -24,6 +25,5 @@
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "description": ""
+  }
 }
